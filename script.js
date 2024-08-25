@@ -26,6 +26,6 @@ document.getElementById('authForm').addEventListener('submit', function(event) {
 function createCertificate(name, course, date) {
     const certificateContainer = document.getElementById('certificate');
     certificateContainer.innerHTML = `
-        <p>Certificamos que <strong>${name}</strong> concluiu com êxito o curso de <strong>${course}</strong> em ${new Date(date).toLocaleDateString()}.</p>
+        <p>Certificamos que <strong>${name}</strong> concluiu com êxito o curso de <strong>${course}</strong> em ${new Date(date).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric' })}.</p>
     `;
 }
