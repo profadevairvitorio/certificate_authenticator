@@ -33,6 +33,7 @@ input, button {
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    text-align: center;
 }
 
 button {
